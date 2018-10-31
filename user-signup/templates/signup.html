@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sign-up</title>
+</head>
+<body>
+	<form method="post">
+		<label for="user_name">User Name:
+			<input id="user_name" type="text" name="user_name" value='{{user_name}}'>
+			<span class="error">{{user_name_error}}</span>
+		</label>
+		<br>
+		<label for="password">Password:
+			<input id="password" type="password" name="password" value='{{password}}'>
+		</label>
+		<br>
+		<label for="verify_password">Verify Password:
+			<input id="verify_password" type="password" name="verify_password" value='{{verify_password}}'>
+			<span class="error">{{password_error}}</span>
+		</label>
+		<br>
+		<input type="submit" name="submit">
+	</form>
+</body>
+</html>
